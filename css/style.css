@@ -1,0 +1,20 @@
+#searchBar
+{
+    width: 50%;
+    margin: 0 auto;
+}
+#searchBar .form-control
+{
+    width: 70%;
+}
+#searchBar *
+{
+    display: inline-block;
+}
+carousel{
+    width:800px; height: 400px; margin: 0 auto;
+}
+carousel .item {
+display: inline-block;
+    margin-right: 5px;
+}
