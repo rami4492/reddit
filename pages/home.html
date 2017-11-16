@@ -1,14 +1,5 @@
 <div id="main" onload="">
 
-    <!--  <div class="grid"><carousel interval="myInterval">-->
-    <!--<slide ng-repeat="slide in names" active="slide.active">-->
-    <!--<a href="{{ slide.data.permalink }}" ><img ng-src="{{slide.data.url }}" alt="{{ slide.data.title }}" ></a>-->
-    <!--<div class="carousel-caption">-->
-    <!--<h4>Slide {{$index+1}}</h4>-->
-    <!--</div>-->
-    <!--</slide>-->
-    <!--</carousel>-->
-
     <form name="myForm" ng-submit="submitForm()">
         <div class="form-group" id="searchBar">
 
@@ -19,18 +10,9 @@
         <div role="alert" ng-hide="!errorResponde" ng-bind="errorResponde"></div>
 
     </form>
-
-
+<hr>
         <carousel links="links"></carousel>
 
 
-    <!--<div class="grid__item" data-size="1280x857" ng-repeat="x in names">-->
-    <!--<a href="{{ x.data.permalink }}" class="img-wrap"><img src="{{ x.data.url }}" alt="{{ x.data.title }}" ></a>-->
-    <!--</div>
-    </div>-->
-
-
-    <!-- angular templating -->
-    <!-- this is where content will be injected -->
 
 </div>
