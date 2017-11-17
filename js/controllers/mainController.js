@@ -2,8 +2,8 @@ app.controller('mainController', ['$scope', 'dataService', 'pagerService',
     function ($scope, dataService, pagerService) {
         $scope.submitForm = function () {
             $scope.items = $scope.links = [];
-            $scope.errorResponde ="";
-                dataService.getImages($scope.form.search, 100)
+            $scope.errorResponde = "";
+            dataService.getImages($scope.form.search, 100)
                 .then(function (response) {//retrieve the data from reddit.
                     angular.forEach(response.data.data.children, function (value, key) {
                         if (value.data.thumbnail !== "self" && value.data.thumbnail !== "default" && value.data.thumbnail !== "") {
