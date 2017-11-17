@@ -1,5 +1,7 @@
 app.service('dataService', ['$http', function ($http) {
-
+/**
+ *service for retreiving data from reddit.
+  */
     var urlBase = 'https://www.reddit.com';
     var urlApi = urlBase+'/r';
     var filter='/new.json?sort=new';

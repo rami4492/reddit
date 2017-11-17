@@ -1,22 +1,44 @@
-#searchBar
-{
+/*searchBar*/
+#searchBar {
     width: 50%;
     margin: 0 auto;
 }
-#searchBar .form-control
-{
+
+#searchBar .form-control {
     width: 70%;
 }
-#searchBar *
-{
+
+#searchBar * {
     display: inline-block;
 }
-carousel{
-    width:800px; height: 400px; margin: 0 auto;
+/*carousel*/
+carousel {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
 }
 carousel .item {
-display: inline-block;
+    display: inline-block;
     margin-right: 5px;
+    padding: 5px;
+    min-height: 150px;
 }
 
+carousel .item img {
 
+    display: inline-block;
+    vertical-align: middle;
+}
+/*pagination*/
+.col-centered {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+}
+.pagination {
+    display: block;
+    text-align: center;
+}
+.pagination a {
+    cursor: pointer;
+}

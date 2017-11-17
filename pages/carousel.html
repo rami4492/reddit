@@ -1,4 +1,5 @@
-<div ng-cloak class="item" ng-repeat="link in links">
-    <a href="{{ link.permalink }}" title="{{link.title}}" target="_blank"><img src="{{link.src}}" alt="{{link.title}}"></a>
+<div class="row text-center text-lg-left">
+    <div ng-cloak class="item col-lg-2 col-md-3 col-xs-5 panel panel-default" ng-repeat="link in links">
+        <a href="{{ link.permalink }}" title="{{link.title}}" target="_blank"><img src="{{link.src}}" alt="{{link.title}}" class="img-rounded align-middle"></a>
+    </div>
 </div>
-

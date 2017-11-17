@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
-    <!-- SPELLS -->
-    <!-- load angular and angular route via CDN -->
 </head>
 <body >
 <header>
@@ -25,12 +20,13 @@
         </div>
     </nav>
 </header>
-<div ng-view ></div>
 <!-- MAIN CONTENT AND INJECTED VIEWS -->
+<div ng-view ></div>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-route.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/services/dataService.js"></script>
+<script src="js/services/pagerService.js"></script>
 <script src="js/controllers/mainController.js"></script>
 </body>
 </html>

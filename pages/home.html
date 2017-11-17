@@ -1,18 +1,35 @@
-<div id="main" onload="">
-
+<div id="main"  class="container">
     <form name="myForm" ng-submit="submitForm()">
         <div class="form-group" id="searchBar">
-
-                <input class="form-control" type="text" name="input" id="search" ng-model="form.search" required placeholder="type a subbreddit"     autofocus ng-trim="false">
+            <input class="form-control" type="text" name="input" id="search" ng-model="form.search" required
+                   placeholder="type a subbreddit" autofocus="autofocus" ng-trim="false">
             </label>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-        <div role="alert" ng-hide="!errorResponde" ng-bind="errorResponde"></div>
-
+        <div class="alert alert-info" ng-hide="!errorResponde" ng-bind="errorResponde"></div>
     </form>
-<hr>
-        <carousel links="links"></carousel>
-
-
-
+    <hr>
+    <carousel links="items"  ></carousel>
+    <!-- pager -->
+    <div class="row" ng-if="items.length>0">
+        <div class="col-centered">
+            <ul ng-if="pager.pages.length" class="pagination text-center">
+                <li ng-class="{disabled:pager.currentPage === 1}">
+                    <a ng-click="setPage(1)">First</a>
+                </li>
+                <li ng-class="{disabled:pager.currentPage === 1}">
+                    <a ng-click="setPage(pager.currentPage - 1)">Previous</a>
+                </li>
+                <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
+                    <a ng-click="setPage(page)">{{page}}</a>
+                </li>
+                <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                    <a ng-click="setPage(pager.currentPage + 1)">Next</a>
+                </li>
+                <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                    <a ng-click="setPage(pager.totalPages)">Last</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
